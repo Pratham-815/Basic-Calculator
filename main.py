@@ -21,3 +21,12 @@ operations = {
     "/" : divide 
 }
 
+
+n1 = int(input("Enter the first number: "))
+n2 = int(input("Enter the second number: "))
+
+for symbol in operations:
+    print(symbol)
+
+operation_symbol = input("Pick an operation from the above options: ")
+
