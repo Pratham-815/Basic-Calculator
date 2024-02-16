@@ -32,14 +32,14 @@ def calculator():
 
     is_on = True
 
-    n1 = int(input("Enter the first number: "))
+    n1 = float(input("Enter the first number: "))
 
     for symbol in operations:
         print(symbol)
 
     operation_symbol = input("Pick an operation from the above options: ")
 
-    n2 = int(input("Enter the second number: "))
+    n2 = float(input("Enter the second number: "))
 
     calculation_function = operations[operation_symbol]
     answer = calculation_function(n1, n2)
@@ -54,7 +54,7 @@ def calculator():
             print(f"Exiting the calculator!!!...\n")
         
         elif choice=='y':
-            n3 = int(input("Enter the next number: "))
+            n3 = float(input("Enter the next number: "))
             operation_symbol = input("Pick an operation: ")
             calculation_function = operations[operation_symbol]
             answer2 = calculation_function(answer, n3)
