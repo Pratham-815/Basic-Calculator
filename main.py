@@ -23,10 +23,19 @@ operations = {
 
 
 n1 = int(input("Enter the first number: "))
-n2 = int(input("Enter the second number: "))
 
 for symbol in operations:
     print(symbol)
 
 operation_symbol = input("Pick an operation from the above options: ")
+
+n2 = int(input("Enter the second number: "))
+
+calculation_function = operations[operation_symbol]
+answer = calculation_function(n1, n2)
+
+print(f"{n1} {operation_symbol} {n2} = {answer}")
+
+
+
 
